@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chathura Gunasekara</title>
+  <meta name="description" content="Chathura Gunasekara: research student at the University of Moratuwa working on post-quantum cryptography, quantum computing and secure embedded systems.">
+  <meta name="author" content="Chathura Gunasekara">
+
+  <!-- Social previews (update og:url once your Vercel domain is set) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Chathura Gunasekara">
+  <meta property="og:description" content="Post-quantum cryptography, quantum computing and secure embedded systems. University of Moratuwa.">
+  <meta property="og:image" content="/assets/profile.jpg">
+  <meta property="og:url" content="https://your-domain.vercel.app/">
+  <meta name="twitter:card" content="summary">
+
+  <script>
+    /* Set the theme before first paint: saved choice, else system setting */
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chathura Gunasekara",
+    "jobTitle": "Research Student",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Moratuwa" },
+    "email": "mailto:chathura.20@cse.mrt.ac.lk",
+    "sameAs": [
+      "https://github.com/PRO-GUNE",
+      "https://www.linkedin.com/in/chathura-gunasekara/",
+      "https://medium.com/@chathuragunasekera"
+    ]
+  }
+  </script>
+</head>
+<body>
+<main class="wrap">
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+  </button>
+
+  
+  <!-- ===================== Header ===================== -->
+  <header class="masthead">
+    <div>
+      <h1 class="name">
+        <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 3H21M3 9H21M3 15H21M3 21H21"/>
+          <path d="M3 3L12 15M3 15L12 3M3 9L12 21M3 21L12 9"/>
+          <path d="M12 3L21 9M12 9L21 3M12 15L21 21M12 21L21 15"/>
+          <g fill="currentColor" stroke="none">
+            <circle cx="3" cy="3" r="1.8"/><circle cx="3" cy="9" r="1.8"/><circle cx="3" cy="15" r="1.8"/><circle cx="3" cy="21" r="1.8"/>
+            <circle cx="12" cy="3" r="1.8"/><circle cx="12" cy="9" r="1.8"/><circle cx="12" cy="15" r="1.8"/><circle cx="12" cy="21" r="1.8"/>
+            <circle cx="21" cy="3" r="1.8"/><circle cx="21" cy="9" r="1.8"/><circle cx="21" cy="15" r="1.8"/><circle cx="21" cy="21" r="1.8"/>
+          </g>
+        </svg>
+        Chathura Gunasekara
+      </h1>
+      <p class="role">Research Student in Computer Science &amp; Engineering<br>University of Moratuwa, Sri Lanka</p>
+      <p class="links">
+        <a href="mailto:chathura.20@cse.mrt.ac.lk">Email</a><span class="sep">/</span><a href="/assets/CV.pdf">CV</a><span class="sep">/</span><a href="https://github.com/PRO-GUNE">GitHub</a><span class="sep">/</span><a href="https://www.linkedin.com/in/chathura-gunasekara/">LinkedIn</a><span class="sep">/</span><a href="https://medium.com/@chathuragunasekera">Medium</a>
+        <!-- Add when available:  <span class="sep">/</span><a href="https://scholar.google.com/citations?user=XXXX">Scholar</a>  -->
+      </p>
+    </div>
+    <img class="portrait" src="/assets/profile.jpg" alt="Portrait of Chathura Gunasekara" width="160" height="160">
+  </header>
+
+  <!-- ===================== About ===================== -->
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p class="lede">I work on post-quantum cryptography and quantum computing, with a focus on making cryptographic schemes fast and secure in hardware: FPGA accelerators, secure embedded systems, and the arithmetic underneath them.</p>
+    <p>I'm a full-time research student at the University of Moratuwa, where I completed my B.Sc. Eng. (Hons) in Computer Science &amp; Engineering in 2025, specialising in Integrated Computer Engineering (CGPA 3.90/4.0). My final-year project was a reconfigurable NTT-based polynomial multiplier for CRYSTALS-Kyber. Before that I built perception and navigation systems for robotics, and prototyped an authorization engine at WSO2.</p>
+    <p class="muted">Research interests: post-quantum cryptography, secure embedded systems, quantum computing, robotics and automation. I'm open to collaboration; feel free to <a href="mailto:chathura.20@cse.mrt.ac.lk">get in touch</a>.</p>
+  </section>
+
+  <!-- ===================== Publications ===================== -->
+  <section id="publications" aria-labelledby="pubs-h">
+    <h2 id="pubs-h">Publications</h2>
+    <ol class="pubs" reversed>
+      <li class="pub">
+        <span class="pub-title"><a href="https://ieeexplore.ieee.org/document/11217056">Reconfigurable Hardware Design of NTT-Based Polynomial Multiplication Accelerator for Post-Quantum Cryptography</a></span>
+        <div class="pub-meta"><span class="venue">MERCon 2025</span><span class="tag">Best paper nominee</span></div>
+        <p class="pub-desc">A reconfigurable FPGA accelerator for the number-theoretic transform, targeting modular polynomial multiplication in CRYSTALS-Kyber.</p>
+        <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/11217056">IEEE Xplore</a></div>
+      </li>
+      <li class="pub">
+        <span class="pub-title"><a href="https://dl.lib.uom.lk/items/66637405-8cd2-4b41-bf23-5c54511abda5">Real-time, Scalable and Extensible Object Filtering and Detection System Using Kinect Sensor and ROS2 Foxy Implemented with C++</a></span>
+        <div class="pub-meta"><span class="venue">ERU Symposium 2023</span><span class="tag">Best paper nominee</span></div>
+        <p class="pub-desc">A modular ROS 2 system for real-time detection of shapes and colours, with filters that can be added and reconfigured at runtime.</p>
+        <div class="pub-links"><a href="https://dl.lib.uom.lk/items/66637405-8cd2-4b41-bf23-5c54511abda5">Paper</a><a href="https://pro-gune.github.io/colorfileter-details.html">Project</a></div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===================== Experience ===================== -->
+  <section id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <ul class="entries">
+      <li class="entry">
+        <span class="when">Sep 2025 – now</span>
+        <div class="what">
+          <strong>Research Student</strong>
+          <span class="where">Dept. of Computer Science &amp; Engineering, University of Moratuwa</span>
+          <p>Quantum computing and post-quantum cryptography.</p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="when">Jan – Jun 2025</span>
+        <div class="what">
+          <strong>Teaching Assistant, CS3340 Robotics and Automation</strong>
+          <span class="where">University of Moratuwa</span>
+          <p>Ran ROS 2 labs with Gazebo and RViz.</p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="when">Jul – Nov 2024</span>
+        <div class="what">
+          <strong>Teaching Assistant, CS2053 Computer Architecture</strong>
+          <span class="where">University of Moratuwa</span>
+          <p>Ran lab sessions for a cohort of 200 students.</p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="when">Dec 2023 – Jun 2024</span>
+        <div class="what">
+          <strong>Software Engineering Intern, Identity &amp; Access Management</strong>
+          <span class="where">WSO2</span>
+          <p>Built a proof of concept authorization engine for WSO2 Identity Server, evaluating XACML, OPA, Topaz and Zanzibar-style models. <a href="https://medium.com/@chathuragunasekera">Articles</a></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===================== Projects ===================== -->
+  <section id="projects" aria-labelledby="proj-h">
+    <h2 id="proj-h">Projects</h2>
+    <ul class="entries">
+      <li class="entry">
+        <span class="when">2024 – 2025</span>
+        <div class="what">
+          <strong>Hardware accelerator for CRYSTALS-Kyber</strong>
+          <span class="where">Final-year research project, in VHDL on Xilinx FPGAs</span>
+          <p>Accelerating modular polynomial multiplication, the bottleneck of lattice-based post-quantum schemes.</p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="when">2024</span>
+        <div class="what">
+          <strong>Secure e-voting system</strong>
+          <p>RSA blind signatures for confidential, authentic and untraceable votes, with vote pooling, signing and validation.</p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="when">2023</span>
+        <div class="what">
+          <strong>ABU Robocon, Team Sri Lanka</strong>
+          <p>Robotics engineering lead. Kinect-based pole recognition, chassis design and navigation for two competition robots. <a href="https://pro-gune.github.io/robocon-details.html">Details</a></p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="when">2022</span>
+        <div class="what">
+          <strong>FPGA nanoprocessor</strong>
+          <p>A simple Harvard-architecture processor in VHDL on a Basys 3 board.</p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="subhead">Smaller things</p>
+    <ul class="plain">
+      <li><a href="https://pro-gune.github.io/Micromouse/">Micromouse simulator</a>: flood-fill maze solving in Python, plus an ATmega328 robot.</li>
+      <li><a href="https://pro-gune.github.io/IOT_Air_Quality/">IoT air-quality node</a>: CO<sub>2</sub>, particulates, humidity and temperature, with a Node-RED dashboard.</li>
+      <li><a href="https://pro-gune.github.io/WordleBot/">Wordle bot</a>: guesses chosen by information gain.</li>
+      <li><a href="https://pro-gune.github.io/ticketapp-details.html">TicketApp</a>: event ticketing with QR scanning and custom validation.</li>
+    </ul>
+  </section>
+
+  <!-- ===================== Education ===================== -->
+  <section id="education" aria-labelledby="edu-h">
+    <h2 id="edu-h">Education</h2>
+    <ul class="entries">
+      <li class="entry">
+        <span class="when">2021 – 2025</span>
+        <div class="what">
+          <strong>B.Sc. Eng. (Hons), Computer Science &amp; Engineering</strong>
+          <span class="where">University of Moratuwa</span>
+          <p>Integrated Computer Engineering stream. CGPA 3.90/4.0, Dean's List in six semesters.</p>
+        </div>
+      </li>
+      <li class="entry">
+        <span class="when">2017 – 2019</span>
+        <div class="what">
+          <strong>G.C.E. Advanced Level</strong>
+          <span class="where">Dharmaraja College, Kandy</span>
+          <p>Four A passes.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===================== Honours ===================== -->
+  <section id="honours" aria-labelledby="hon-h">
+    <h2 id="hon-h">Honours</h2>
+    <ul class="plain">
+      <li>Best paper nominee, MERCon 2025 and ERU Symposium 2023</li>
+      <li>ABU Robocon 2023: first place in Sri Lanka, represented the country internationally</li>
+      <li>IEEEXtreme 16.0: 15th in Sri Lanka</li>
+      <li>International Mathematics Competition for University Students 2022: represented the University of Moratuwa</li>
+      <li>IUHD Mathematical Olympiad 2022: third prize</li>
+      <li>International Young Mathematicians Convention, Lucknow: bronze medal</li>
+      <li>RealHack 4.0 hackathon: runners-up</li>
+    </ul>
+    <p class="subhead">Outside the lab</p>
+    <p class="muted">University colours for table tennis (2022–2024) and SLUSA colours (2024); junior national table tennis champion. First place, All-Island Ragadhari Sitar, Sangeeth Abhimani Award (2018).</p>
+  </section>
+
+  <!-- ===================== Service ===================== -->
+  <section id="service" aria-labelledby="svc-h">
+    <h2 id="svc-h">Service and leadership</h2>
+    <ul class="plain">
+      <li>Department representative, CSE, University of Moratuwa (2023–2024)</li>
+      <li>Treasurer, Classical Music Society; vice captain, men's table tennis team (2023–2024)</li>
+      <li>Lead organiser and creative director, CSE40 “Sakura” musical event (2025)</li>
+      <li>STEAM technical team lead, Sasnaka Sansada: built its <a href="https://projects.sasnaka.org/">project tracking system</a> (2022–2023)</li>
+      <li>Founder, Tecview Online, an affordable course platform for engineering students (2022–2024)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Last updated November 2026.</p>
+  </footer>
+</main>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById("theme-toggle");
+    var media = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function label() {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      btn.setAttribute("aria-label", "Switch to " + next + " mode");
+      btn.title = "Switch to " + next + " mode";
+    }
+    function apply(t, animate) {
+      if (animate) {
+        root.classList.add("theme-anim");
+        setTimeout(function () { root.classList.remove("theme-anim"); }, 300);
+      }
+      root.setAttribute("data-theme", t);
+      label();
+    }
+
+    btn.addEventListener("click", function () {
+      var t = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      try { localStorage.setItem("theme", t); } catch (e) {}
+      apply(t, true);
+    });
+
+    /* Follow system changes until the visitor picks a theme */
+    media.addEventListener("change", function (e) {
+      var saved = null;
+      try { saved = localStorage.getItem("theme"); } catch (err) {}
+      if (!saved) apply(e.matches ? "dark" : "light", true);
+    });
+
+    label();
+  })();
+</script>
+</body>
+</html>

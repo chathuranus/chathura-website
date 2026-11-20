@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Chathura Gunasekara</title>
+  <script>
+    /* Set the theme before first paint: saved choice, else system setting */
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="wrap">
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+  </button>
+
+    <h1 class="name">Page not found</h1>
+  <p>This page doesn't exist. <a href="/">Go to the home page</a>.</p>
+</main>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById("theme-toggle");
+    var media = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function label() {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      btn.setAttribute("aria-label", "Switch to " + next + " mode");
+      btn.title = "Switch to " + next + " mode";
+    }
+    function apply(t, animate) {
+      if (animate) {
+        root.classList.add("theme-anim");
+        setTimeout(function () { root.classList.remove("theme-anim"); }, 300);
+      }
+      root.setAttribute("data-theme", t);
+      label();
+    }
+
+    btn.addEventListener("click", function () {
+      var t = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      try { localStorage.setItem("theme", t); } catch (e) {}
+      apply(t, true);
+    });
+
+    /* Follow system changes until the visitor picks a theme */
+    media.addEventListener("change", function (e) {
+      var saved = null;
+      try { saved = localStorage.getItem("theme"); } catch (err) {}
+      if (!saved) apply(e.matches ? "dark" : "light", true);
+    });
+
+    label();
+  })();
+</script>
+</body>
+</html>
