@@ -282,6 +282,18 @@ h2 {
   margin: 1.6rem 0 0.7rem;
 }
 
+/* ---------- Two-column groups (music / sports) ---------- */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2rem;
+}
+.split .subhead { margin-top: 0.4rem; }
+@media (max-width: 600px) {
+  .split { grid-template-columns: 1fr; }
+  .split > div + div .subhead { margin-top: 1.4rem; }
+}
+
 /* ---------- Footer ---------- */
 footer {
   margin-top: 3.5rem;
